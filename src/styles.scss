@@ -1,0 +1,43 @@
+.navbar {
+  background: linear-gradient(90deg, #0062E6, #33AEFF);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  color: #FFD700; /* gold bus icon */
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD700 !important;
+}
+
+/* Login button */
+.btn-outline-success {
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #fff;
+  color: #0062E6;
+}

@@ -1,0 +1,62 @@
+<div class="container mt-4">
+  <div class="card shadow-lg rounded-3">
+    <div class="card-header bg-primary text-white text-center fs-5">
+      <i class="fa-solid fa-ticket me-2"></i>Book Your Bus Ticket
+    </div>
+
+    <div class="card-body">
+      <!-- From -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">
+          <i class="fa-solid fa-location-dot me-2 text-danger"></i>From
+        </label>
+
+        <select
+          class="form-select"
+          name="fromLocationId"
+          aria-label="From location"
+          [(ngModel)]="searchObj.fromLocationId"
+        >
+          <option value="">Select From Location</option>
+          @for (locat of locationList; track $index) {
+          <option [value]="locat.locationId">{{ locat.locationName }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- To -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">
+          <i class="fa-solid fa-location-dot me-2 text-success"></i>To
+        </label>
+
+        <select
+          class="form-select"
+          name="toLocationId"
+          aria-label="To location"
+          [(ngModel)]="searchObj.toLocationId"
+        >
+          <option value="">Select To Location</option>
+          @for (locat of locationList; track $index) {
+          <option [value]="locat.locationId">{{ locat.locationName }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- Date -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">
+          <i class="fa-solid fa-calendar me-2 text-primary"></i>Date of Journey
+        </label>
+        <input type="date" class="form-control" name="date" [(ngModel)]="searchObj.date" />
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary px-4" (click)="searchBus()">
+          <i class="fa-solid fa-magnifying-glass me-2"></i>Search Buses
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

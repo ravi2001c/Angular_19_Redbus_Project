@@ -1,0 +1,58 @@
+.seat.available {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-weight: 500;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.seat.available:hover {
+  background: #e7f1ff;
+  border-color: #0d6efd;
+  cursor: pointer;
+}
+
+.card.booking-summary {
+  border-left: 4px solid #0d6efd; /* blue vertical line */
+  padding-left: 15px; /* line ke saath thoda spacing */
+}
+
+.card .bus-layout {
+  border-left: 4px solid #8d0dfd; /* purple vertical line */
+  padding-left: 15px;
+}
+
+.d-flex {
+  border-left: 4px solid #8d0dfd; /* purple vertical line */
+  padding-left: 15px;
+}
+.seat {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.seat.available {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.seat.booked {
+  background-color: #6c757d;
+  color: white;
+  cursor: not-allowed;
+}
+
+.driver-area .steering i {
+  font-size: 2rem;
+}
+
